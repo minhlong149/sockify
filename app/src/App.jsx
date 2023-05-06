@@ -1,9 +1,8 @@
-import { useState } from "react";
+import React, { useEffect } from "react";
+import { socket } from "./socket.js";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
     socket.connect();
 
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <form>
-      <label for="file">Choose a image:</label>
+      <label htmlFor="file">Choose a image:</label>
       <input id="file" name="file" type="file" accept="image/*" />
       <input type="submit" value="Submit" />
     </form>
