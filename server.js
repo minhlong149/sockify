@@ -1,8 +1,6 @@
 const express = require("express");
 const app = express();
-
-const path = require('path');
-app.use(express.static(path.resolve(__dirname, '../app/dist')));
+app.use(express.static("dist"));
 
 const http = require("http");
 const server = http.createServer(app);
