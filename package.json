@@ -2,9 +2,8 @@
   "name": "realtime-notification",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "cd ./app && npm run build && cd .. && node server"
+    "start": "cd ./app && npm run build && cd .. && node server"
   },
   "repository": {
     "type": "git",
