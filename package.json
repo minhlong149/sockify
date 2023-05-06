@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "cd ./app && npm run build && cd .. && node server"
+    "start": "cd ./app && npm run build && cd .. && node server",
+    "postinstall": "cd ./app && npm install && cd ../server && npm install"
   },
   "repository": {
     "type": "git",
