@@ -9,6 +9,10 @@ export default defineConfig({
       '/api': {
         target: `http://localhost:${process.env.PORT || 3000}`,
         changeOrigin: true,
+      },
+       '/image': {
+        target: `http://localhost:${process.env.PORT || 3000}`,
+        changeOrigin: true,
       }
     }
   }

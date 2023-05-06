@@ -7,3 +7,57 @@ label {
     display: block;
     margin: 0.4rem 0;
 }
+
+input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+button {
+    font: inherit;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid #0077cc;
+    border-radius: 0.3rem;
+    background: #0077cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #0099ff;
+    border-color: #0099ff;
+    outline: none;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
