@@ -1,10 +1,7 @@
 require("dotenv").config();
 
-const express = require("express");
-const app = express();
-app.use(express.static("dist"));
-
 const http = require("http");
+const app = require("./app.js");
 const server = http.createServer(app);
 
 const { Server } = require("socket.io");
